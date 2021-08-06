@@ -11,6 +11,12 @@
 	content: "\f078"; color:#333;
 }
 
+
+/* Change down arrow to up arrow when heading expanded - JP 2021-08-05 */
+[aria-expanded='true'] > div.bold:before {
+content: "\f077";
+}
+
 /* Fix to add branding style rounded border to left side boxes (content box) - JP 2021-08-05 */
 h2.pad-bottom-sm {
 	font-family: 'Cabin', sans-serif;
