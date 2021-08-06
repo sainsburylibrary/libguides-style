@@ -1,4 +1,4 @@
-/* Change inactives tabs to light grey - JP 2021-08-06 */
+/* Change inactive tabs to light grey - JP 2021-08-06 */
 .nav-tabs>li>a {
 background-color: lightgray;
 }
