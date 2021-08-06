@@ -1,5 +1,6 @@
 <style>
 
+/* Add a down arrow to the collapsable headings - JP 2021-08-05 */
 .panel-heading .bold:before {
 	display: inline-block;
 	padding-right: 0.5em;
@@ -10,6 +11,7 @@
 	content: "\f078"; color:#333;
 }
 
+/* Fix to add branding style rounded border to left side boxes (content box) - JP 2021-08-05 */
 h2.pad-bottom-sm {
 	font-family: 'Cabin', sans-serif;
 	font-size: 18px;
@@ -25,10 +27,12 @@ h2.pad-bottom-sm {
 	width:auto;
 }
 
+/* Fix width for first left side tab - JP 2021-08-05 */
 #col2 > div:nth-child(1) > div.s-lib-public-side-header > h2 {
 	width:85%;
 }
 
+/* Fix to add branded green tabs to left side boxes (tab at top of box) - JP 2021-08-05 */
 .txt.pad-top-sm {
 	border: 1px solid #ccc;
 	border-radius: 0 4px 4px 4px;
