@@ -1,0 +1,139 @@
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+
+
+
+
+   #banner {
+    background-color: #3a3a3a;
+width: 100%;
+    max-width: 1170px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+
+    display: block;
+padding: 20px
+  }
+  
+
+    #logo {margin: 0px;padding: 0;display:inline-block;top:0px;left: 0px;width: 400px;padding-right: 20px;}
+    #logo img { border:none; display:inline-block; padding-right: 100px;}
+
+    #sitename {overflow: hidden;top: 22px;z-index: 200;display:inline-block;line-height:22px;max-width: 390px;min-width: 200px;width: 100%;}
+
+    #sitename span {  font-weight: bold; overflow: hidden; padding: 0; display: inline-block; }
+    #sitename span a:active,#sitename span a:focus { color: #fff;}
+    #sitename a {font-weight:normal; font-size:24px; color: #fff; display: inline-block; max-width: 390px; min-width: 200px; width: 100%;}
+
+    /* increased width from 315px to 390px */
+    #sitename {position: relative;margin-top: 5px;margin-bottom: 10px;}
+    #sitename, #sitename h1  {white-space: normal !important;font-size:1.3em;} 
+
+
+
+body 
+{font-family: 'Cabin', sans-serif}
+
+#s-lg-guide-main h2 {
+  font-size: 18px;
+    background-color: #d0e8dd;
+    color: #000;
+}
+
+p {
+  font-size: 16px;
+}
+
+ul {
+  font-size: 16px;
+}
+
+.s-lg-poll-title legend {
+  font-size: 16px;
+}
+
+
+
+
+
+footer container bodleian-footer s-lib-footer
+{font-color:#fffff;
+ background-color: #3a3a3a;
+}
+
+/* ------------------------------ CSS added by JP - 2021-03-26 ------------------------------ */
+
+/* Collapse links in content boxes */
+div.s-lib-box-content a {word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
+
+/*  Display H2 headings (on top of boxes) as inline block (fixes overlap issue) */
+div#s-lg-guide-main h2.s-lib-box-title {
+    display: inline-block;
+    border-bottom: 1px solid #a2a2a2;
+}
+
+
+/* Remove H2 background within sidebar boxes */
+div.s-lib-box-content > div h2 {
+	background-color: transparent !important;
+	border: none !important;
+}
+
+/* Remove space under headings */
+.s-lib-box-content {
+   margin-top: 0;
+}
+
+/* Increase size of ordered lists */
+div.s-lib-box-content ol li, div.s-lib-box-content ul li, div.s-lib-box-content > div > ul > li > span  {
+    font-size: 16px !important;
+}
+
+/* Fix rogue style spans in content box paragraphs */
+div.s-lib-box-content > div p span {
+   font-size: unset !important;
+}
+
+/* Fix paragraphs, spans and ULs in content boxes */
+div.s-lib-box-container p, div.s-lib-box-container span, div.s-lib-box-container ul {
+font-size: 16px !important;
+font-family: Cabin, sans-serif !important;
+color: unset !important;
+}
+
+/* Fix rogue styles in strong elements in content box paragraphs */
+div.s-lib-box-content span strong a {
+   font-size: unset !important;
+   font-family: unset !important;
+}
+
+div.s-lib-box-content span strong {
+   font-size: 16px !important;
+   font-family: Cabin, sans-serif !important;
+}
+
+/* Fix rogue styles in content box H3s */
+div.s-lib-box-content > div h3 {
+font-size: 16px !important;
+font-style: unset !important;
+}
+
+/* Fix rogue styles in content box H4s */
+div.s-lib-box-content > div h4 {
+font-size: 15px !important;
+font-style: unset !important;
+}
+
+/* Fix small text in content box divs */
+div.s-lib-box-content div {
+font-size: 16px !important;
+}
+
+/* Added by HB: not by JP! The dropdowns are too small. */
+.dropdown-menu {
+  font-size: 16px;
+}
+
+</style>

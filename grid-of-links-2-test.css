@@ -1,0 +1,63 @@
+/* grids of links */
+.grid-of-links-3 {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-of-links-3 > * {
+  width:100%;
+  text-align: center;
+}
+
+.grid-of-links-3 a {
+  display: block;
+}
+
+.grid-of-links-3 .title {
+  display: block;
+  margin: 20px 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 640px) {
+  .grid-of-links-3 > * {
+    width:33%;
+  }
+}
+
+/* grids of links */
+.grid-of-links-2 {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-of-links-2 > * {
+  width:100%;
+  text-align: center;
+}
+
+.grid-of-links-2 a {
+  display: block;
+}
+
+.grid-of-links-2 .title {
+  display: block;
+  margin: 20px 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.grid-of-links-2 .subtitle {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 640px) {
+  .grid-of-links-2 > * {
+    width:50%;
+  }
+}

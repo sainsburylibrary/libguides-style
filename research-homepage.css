@@ -1,0 +1,39 @@
+<style>
+
+.panel-heading .bold:before {
+	display: inline-block;
+	padding-right: 0.5em;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	content: "\f078"; color:#333;
+}
+
+h2.pad-bottom-sm {
+	font-family: 'Cabin', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #d0e8dd;
+	color: #000;
+	display: inline-block;
+	border-radius: 3px 3px 0px 0px;
+	border-bottom: 1px solid #a2a2a2;
+	margin-bottom: 0;
+	padding: 6px 8px;
+	margin-top: 0;
+	width:auto;
+}
+
+#col2 > div:nth-child(1) > div.s-lib-public-side-header > h2 {
+	width:85%;
+}
+
+.txt.pad-top-sm {
+	border: 1px solid #ccc;
+	border-radius: 0 4px 4px 4px;
+	box-shadow: 0 8px 6px -6px #AAAAAA;
+	padding: 10px;
+}
+
+</style>

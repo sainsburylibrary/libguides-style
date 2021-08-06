@@ -1,0 +1,450 @@
+<script type="text/javascript">
+
+  var redirect_to_libguides_ox_ac_uk = true; /* <-- change "true" to "false" to disable this behaviour */
+
+  $(function(){
+    if(redirect_to_libguides_ox_ac_uk){
+      /* Make links to ox.libguides.com go to libguides.bodleian.ox.ac.uk */
+      $("a[href^='http://ox.libguides.com']").each(function(){
+        $(this).attr('href', $(this).attr('href').replace('http://ox.libguides.com', 'https://libguides.bodleian.ox.ac.uk'));
+      });
+      $("a[href^='https://ox.libguides.com']").each(function(){
+        $(this).attr('href', $(this).attr('href').replace('https://ox.libguides.com', 'https://libguides.bodleian.ox.ac.uk'));
+      });
+      $("a[href^='//ox.libguides.com']").each(function(){
+        $(this).attr('href', $(this).attr('href').replace('//ox.libguides.com', 'https://libguides.bodleian.ox.ac.uk'));
+      });
+      /* Make "GET" forms to ox.libguides.com go to libguides.bodleian.ox.ac.uk */
+      $("form[method='GET'][action^='http://ox.libguides.com']").each(function(){
+        $(this).attr('action', $(this).attr('action').replace('http://ox.libguides.com', 'https://libguides.bodleian.ox.ac.uk'));
+      });
+      $("form[method='GET'][action^='https://ox.libguides.com']").each(function(){
+        $(this).attr('action', $(this).attr('action').replace('https://ox.libguides.com', 'https://libguides.bodleian.ox.ac.uk'));
+      });
+      /* Special-case redirects */
+      if((window.location.href == 'http://ox.libguides.com/friendly.php?s=oxford') || (window.location.href == 'https://ox.libguides.com/friendly.php?s=oxford')) window.location.href = 'https://libguides.bodleian.ox.ac.uk/friendly.php?s=oxford';
+      /* General-case redirects */
+      if((window.location.host == 'ox.libguides.com') && (window.location.search == "")) window.location.host = 'libguides.bodleian.ox.ac.uk';
+      /* URL in footer */
+      var urlWrapper = $('#s-lg-guide-header-url .s-lg-text-greyout');
+      urlWrapper .text(urlWrapper .text().replace('ox.libguides.com', 'libguides.bodleian.ox.ac.uk'));
+    }
+  });
+/* live help script for databases A-Z */
+    $(document).ready(function(){
+      $(".displayed").hide();
+      $(".hide").click(function(){
+        $(".displayed").hide();
+        $(".hidden").show();
+      });
+      $(".show").click(function(){
+        $(".displayed").show();
+        $(".hidden").hide();
+      });
+    });
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+
+/* New brand header 2021 */
+
+   #banner {
+    background-color: #3a3a3a;
+width: 100%;
+    max-width: 1170px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+
+    display: block;
+padding: 20px
+  }
+  
+
+    #logo {margin: 0px;padding: 0;display:inline-block;top:0px;left: 0px;width: 400px;padding-right: 20px;}
+    #logo img { border:none; display:inline-block; padding-right: 100px;}
+
+    #sitename {overflow: hidden;top: 22px;z-index: 200;display:inline-block;line-height:22px;max-width: 390px;min-width: 200px;width: 100%;}
+
+    #sitename span {  font-weight: bold; overflow: hidden; padding: 0; display: inline-block; }
+    #sitename span a:active,#sitename span a:focus { color: #fff;}
+    #sitename a {font-weight:normal; font-size:24px; color: #fff; display: inline-block; max-width: 390px; min-width: 200px; width: 100%;}
+
+    /* increased width from 315px to 390px */
+    #sitename {position: relative;margin-top: 5px;margin-bottom: 10px;}
+    #sitename, #sitename h1  {white-space: normal !important;font-size:1.3em;}
+
+
+  /* Make header search box stand out by adding a 'block' border */
+  #s-lg-guide-header-search {
+    background: #7c7c7b;
+    padding: 8px 11px 3px 0;
+  }
+
+  /* Saner spectrum of heading sizes (requested by AC, 2015-12-10) */
+  #s-lg-guide-main h1, #s-lg-guide-main h3, #s-lg-guide-main h4, #s-lg-guide-main h5, #s-lg-guide-main h6 {
+    font-weight: bold;
+  }
+  #s-lg-guide-main h1 {
+    font-size: 18px;
+  }
+  #s-lg-guide-main h2 {
+    font-size: 14px;
+font-weight: 400;
+  }
+  #s-lg-guide-main h3, #s-lg-guide-main h4, #s-lg-guide-main h5, #s-lg-guide-main h6 {
+    font-size: 12px;
+  }
+  
+  /* Stop subjects floating to the left of contact us link, in the footer, which causes knock-on effects in the position of bottom borders. */  #s-lg-guide-header-subjects {
+    float: none !important;
+  }
+
+  /* Make headings of boxes narrower, borders still work */
+  #s-lg-guide-main h2 {
+    display: inline;
+  }
+  .s-lib-box {
+    border-width: 0px;
+  }
+  .s-lib-box-content {
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 4px;
+    margin-top: 2px;
+  }
+  .s-lib-floating-box-content {
+    border-radius: 4px 4px 4px 4px;
+  }
+  .s-lib-floating-box-content > div {
+    padding: 10px 10px 5px 10px;
+  }
+
+
+div#s-lg-box-collapse-9063970 {
+    height: 200px;
+    overflow: scroll;
+}
+
+div#s-lg-box-collapse-13741521 {
+    height: 420px;
+    overflow: scroll;
+}
+
+div#s-lg-box-collapse-13815694 {
+    height: 420px;
+    overflow: scroll;
+}
+div#s-lg-box-collapse-13815702 {
+    height: 420px;
+    overflow: scroll;
+}
+div#s-lg-box-collapse-13815715 {
+    height: 420px;
+    overflow: scroll;
+}
+div#s-lg-box-collapse-13815717 {
+    height: 420px;
+    overflow: scroll;
+}
+div#s-lg-box-collapse-8860576 {
+    height: 420px;
+    overflow: scroll;
+}
+
+/* grids of links */
+.grid-of-links-3 {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-of-links-3 > * {
+  width:100%;
+  text-align: center;
+}
+
+.grid-of-links-3 a {
+  display: block;
+}
+
+.grid-of-links-3 .title {
+  display: block;
+  margin: 20px 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 640px) {
+  .grid-of-links-3 > * {
+    width:33%;
+  }
+}
+
+/* grids of links */
+.grid-of-links-2 {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-of-links-2 > * {
+  width:100%;
+  text-align: center;
+}
+
+.grid-of-links-2 a {
+  display: block;
+}
+
+.grid-of-links-2 .title {
+  display: block;
+  margin: 20px 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.grid-of-links-2 .subtitle {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 640px) {
+  .grid-of-links-2 > * {
+    width:50%;
+  }
+}
+
+/* a to z list */
+#s-lg-icons-31134152 img {
+    max-height: 1pc;
+    max-width: 10pc;
+}
+
+#s-lg-az-content .s-lg-icons .fa-external-link, #s-lg-az-popular-div .s-lg-icons .fa-external-link, #s-lg-az-trials-div .s-lg-icons .fa-external-link {
+	display: none;
+}
+
+.s-lg-az-result-keywords {
+    display: none;
+}
+
+#s-lg-az-experts-div .s-lib-profile-image img {
+    max-width: 60%;
+}
+
+@media (max-width: 480px) {
+#s-lg-az-experts-div {
+    display: none;
+  }
+}
+
+/* --------------------------- Start New Brand additional code - 2021-04-29 --------------------------- */
+body 
+{font-family: 'Cabin', sans-serif}
+
+#s-lg-guide-main h2 {
+  font-size: 18px;
+    background-color: #d0e8dd;
+    color: #000;
+}
+
+p {
+  font-size: 16px;
+}
+
+ul {
+  font-size: 16px;
+}
+
+.s-lg-poll-title legend {
+  font-size: 16px;
+}
+
+footer container bodleian-footer s-lib-footer
+{font-color:#fffff;
+ background-color: #3a3a3a;
+}
+
+/* Collapse links in content boxes */
+div.s-lib-box-content a {word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
+
+/*  Display H2 headings (on top of boxes) as inline block (fixes overlap issue) */
+div#s-lg-guide-main h2.s-lib-box-title {
+    display: inline-block;
+    border-bottom: 1px solid #a2a2a2;
+}
+
+
+/* Remove H2 background within sidebar boxes */
+div.s-lib-box-content > div h2 {
+	background-color: transparent !important;
+	border: none !important;
+}
+
+
+
+
+/* Remove space under headings */
+.s-lib-box-content {
+   margin-top: 0;
+}
+
+/* Increase size of ordered lists */
+div.s-lib-box-content ol li, div.s-lib-box-content ul li, div.s-lib-box-content > div > ul > li > span  {
+    font-size: 16px !important;
+}
+
+/* Fix rogue style spans in content box paragraphs */
+div.s-lib-box-content > div p span {
+   font-size: unset !important;
+}
+
+/* Fix paragraphs, spans and ULs in content boxes */
+div.s-lib-box-container p, div.s-lib-box-container span, div.s-lib-box-container ul {
+font-size: 16px !important;
+font-family: Cabin, sans-serif !important;
+color: unset !important;
+}
+
+/* Fix rogue styles in various elements in content box paragraphs */
+div.s-lib-box-content a, div.s-lib-box-content span, div.s-lib-box-content strong, div.s-lib-box-content span strong a {
+   font-size: unset !important;
+   font-family: unset !important;
+}
+
+div.s-lib-box-content span strong {
+   font-size: 16px !important;
+   font-family: Cabin, sans-serif !important;
+}
+
+/* Fix rogue styles in content box H3s */
+div.s-lib-box-content > div h3 {
+font-size: 16px !important;
+font-style: unset !important;
+}
+
+/* Fix rogue styles in content box H4s */
+div.s-lib-box-content > div h4 {
+font-size: 15px !important;
+font-style: unset !important;
+}
+
+/* Fix small text in content box divs */
+div.s-lib-box-content div {
+font-size: 16px !important;
+}
+
+/* Fix dropdowns being too small. */
+.dropdown-menu {
+  font-size: 16px;
+}
+
+/* Reset FontAwesome */
+div.s-lib-box-container .fa {font-family: FontAwesome !important;}
+
+/* Make guide description larger */
+span#s-lg-guide-description {
+font-size: 14px;
+}
+
+/* Fix table headings in comparison tables */
+.s-lib-box-content table.comparison > tbody > tr > td:nth-child(1),
+.s-lib-box-content table.comparison thead > tr > th,
+.s-lib-box-content table.comparison > tbody:nth-child(1) > tr:nth-child(1) > td
+{
+    color: white !important;
+    background-color: #3a3a3a;
+}
+
+/* Fix dropdown arrows (carets) */
+#s-lg-guide-tabs > ul > li > a.s-lg-tab-drop.dropdown-toggle > span.caret {border-top-color: unset !important;}
+
+/* Fix contrast and visibility of external link icon */
+.fa-external-link {
+    font-size: 14px !important;
+    color: unset !important;
+}
+
+/* Remove bold navigation*/
+#s-lg-tabs-container .nav-tabs > li > a,
+#s-lg-tabs-container .nav-tabs > li > button,
+#s-lg-tabs-container .nav-pills > li > a,
+#s-lg-tabs-container .nav-pills > li > button {
+font-weight: 400 !important;
+}
+
+/*Increase size subject tags*/
+.s-lg-small, .s-lib-debug, .s-lib-small {
+    font-size: 12px;
+}
+
+/*Increase size breadcrumb*/
+#s-lib-admin-bc .breadcrumb, #s-lib-bc .breadcrumb {
+    font-size: 12px;
+}
+
+
+/* Styles for non-subject A-Z page */
+div.panel-group {
+    font-size: 16px !important;
+}
+/* End Styles for non-subject A-Z page */
+
+/* Styles for A-Z page */
+
+#s-lg-box-15535245-container .s-lib-box-content, #s-lg-box-15535246-container .s-lib-box-content, #s-lg-box-15535247-container .s-lib-box-content, #s-lg-box-collapse-15539104 > div.s-lib-box-content,
+#s-lg-box-15539730-container .s-lib-box-content, #s-lg-box-15539731-container .s-lib-box-content, #s-lg-box-15539732-container .s-lib-box-content, #s-lg-box-collapse-15539733 > div.s-lib-box-content 
+{
+          border:none;
+}
+
+/* Style Intro boxes */
+div#s-lg-box-15539104, div#s-lg-box-15539733 {
+        margin-bottom:0 !important;
+        padding-bottom: 0 !important;
+}
+
+#s-lg-box-15535245-container ul, #s-lg-box-15535246-container ul, #s-lg-box-15535247-container ul,
+#s-lg-box-15539730-container ul, #s-lg-box-15539731-container ul, #s-lg-box-15539732-container ul
+ {
+          list-style: none !important;
+          list-style-position: outside;
+           padding: 0;
+            margin: 0;
+           margin-left: 1em;
+        }
+
+#s-lg-box-15535245-container ul li a:before, #s-lg-box-15535246-container ul li a:before, #s-lg-box-15535247-container ul li a:before,
+#s-lg-box-15539730-container ul li a:before, #s-lg-box-15539731-container ul li a:before, #s-lg-box-15539732-container ul li a:before
+ {
+          content: "\f054";
+          background-size: contain;
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+          position: relative;
+          top: 0.1rem;
+          margin-right: 0;
+          font-family: "Font Awesome 5 Free Solid","Font Awesome 5 Free","FontAwesome" !important;
+          color: #444;
+          width: 1em;
+          margin-left: -1em;
+        }
+        
+#s-lg-box-15535245-container ul li a, #s-lg-box-15535246-container ul li a, #s-lg-box-15535247-container ul li a,
+#s-lg-box-15539730-container ul li a, #s-lg-box-15539731-container ul li a, #s-lg-box-15539732-container ul li a
+ {
+          display: inline-block;
+          hyphens: none;
+          word-break: normal;
+          -webkit-hyphens: none;
+        }
+/* End Styles for A-Z page */
+
+
+/* --------------------------- End New Brand additional code - 2021-04-29 --------------------------- */
+</style>

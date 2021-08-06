@@ -1,0 +1,22 @@
+
+/* ------------------------------ CSS added by JP - 2021-03-26 ------------------------------ */
+
+/* Collapse links in content boxes */
+div.s-lib-box-content a {word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
+
+/*  Display headings as inline block (fixes overlap issue) */
+#s-lg-guide-main h2 {
+    display: inline-block;
+    border-bottom: 1px solid #a2a2a2;
+}
+
+/* Remove space under headings */
+.s-lib-box-content {
+    margin-top: 0;
+}
+
+
+/* Increase size of ordered lists */
+ol {
+    font-size: 14px !important;
+}
