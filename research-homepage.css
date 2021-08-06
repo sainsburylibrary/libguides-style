@@ -1,6 +1,6 @@
 <style>
 
-/* Add a down arrow to the collapsable headings - JP 2021-08-05 */
+/* Add a down arrow to the collapsible headings - JP 2021-08-05 */
 .panel-heading .bold:before {
 	display: inline-block;
 	padding-right: 0.5em;
@@ -27,12 +27,12 @@ h2.pad-bottom-sm {
 	width:auto;
 }
 
-/* Fix width for first left side tab - JP 2021-08-05 */
+/* Fix width for first right side tab - JP 2021-08-05 */
 #col2 > div:nth-child(1) > div.s-lib-public-side-header > h2 {
 	width:85%;
 }
 
-/* Fix to add branded green tabs to left side boxes (tab at top of box) - JP 2021-08-05 */
+/* Fix to add branded green tabs to right side boxes (tab at top of box) - JP 2021-08-05 */
 .txt.pad-top-sm {
 	border: 1px solid #ccc;
 	border-radius: 0 4px 4px 4px;
