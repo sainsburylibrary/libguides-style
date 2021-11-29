@@ -417,21 +417,20 @@ div#s-lg-box-15539733 {
            margin-left: 1em;
         }
 
-#s-lg-box-15539730-container ul li a:before, #s-lg-box-15539731-container ul li a:before, #s-lg-box-15539732-container ul li a:before
- {
-          content: "\f054";
-          background-size: contain;
-          display: inline-block;
-          width: 1em;
-          height: 1em;
-          position: relative;
-          top: 0.1rem;
-          margin-right: 0;
-          font-family: "Font Awesome 5 Free Solid","Font Awesome 5 Free","FontAwesome" !important;
-          color: #444;
-          width: 1em;
-          margin-left: -1em;
-        }
+#s-lg-box-15539730-container ul li a::before, #s-lg-box-15539731-container ul li a::before, #s-lg-box-15539732-container ul li a::before {
+    content: "\f0c8";
+    background-size: contain;
+    display: list-item;
+    position: absolute;
+    margin-right: 0;
+    font-family: "Font Awesome 5 Free Solid","Font Awesome 5 Free","FontAwesome" !important;
+    color: #444;
+    width: 1em;
+    font-size: 8px;
+    vertical-align: middle;
+    margin-left: -1.6em;
+    margin-top: 1em;
+}
         
 #s-lg-box-15539730-container ul li a, #s-lg-box-15539731-container ul li a, #s-lg-box-15539732-container ul li a
  {
