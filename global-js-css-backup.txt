@@ -403,12 +403,11 @@ div.panel-group {
 }
 
 /* Style Intro boxes */
-div#s-lg-box-15539104, div#s-lg-box-15539733 {
+div#s-lg-box-15539733 {
         margin-bottom:0 !important;
         padding-bottom: 0 !important;
 }
 
-#s-lg-box-15535245-container ul, #s-lg-box-15535246-container ul, #s-lg-box-15535247-container ul,
 #s-lg-box-15539730-container ul, #s-lg-box-15539731-container ul, #s-lg-box-15539732-container ul
  {
           list-style: none !important;
@@ -418,7 +417,6 @@ div#s-lg-box-15539104, div#s-lg-box-15539733 {
            margin-left: 1em;
         }
 
-#s-lg-box-15535245-container ul li a:before, #s-lg-box-15535246-container ul li a:before, #s-lg-box-15535247-container ul li a:before,
 #s-lg-box-15539730-container ul li a:before, #s-lg-box-15539731-container ul li a:before, #s-lg-box-15539732-container ul li a:before
  {
           content: "\f054";
@@ -435,7 +433,6 @@ div#s-lg-box-15539104, div#s-lg-box-15539733 {
           margin-left: -1em;
         }
         
-#s-lg-box-15535245-container ul li a, #s-lg-box-15535246-container ul li a, #s-lg-box-15535247-container ul li a,
 #s-lg-box-15539730-container ul li a, #s-lg-box-15539731-container ul li a, #s-lg-box-15539732-container ul li a
  {
           display: inline-block;
@@ -445,6 +442,19 @@ div#s-lg-box-15539104, div#s-lg-box-15539733 {
         }
 /* End Styles for A-Z page */
 
+/* Change inactive tabs to light grey - JP 2021-08-06 */
+.nav-tabs > li > a {
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+/* Increase font size of the description on the research guide home page - JP 2021-11-25 */
+#s-lib-public-header-desc {
+    font-size: 16px;
+    margin-top: -4px;
+}
 
 /* --------------------------- End New Brand additional code - 2021-04-29 --------------------------- */
 </style>
